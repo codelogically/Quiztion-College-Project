@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiztion - Instruction</title>
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="./Css/instruction.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./Images/apple-touch-icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="main_container">
+      <div class="box">
+        <div class="inner_box">
+
+          <!-- Section  -->
+          <div class="section1">
+            <div class="logo">
+              <img src="./Images/Logo.svg" alt="Quiztion Logo" />
+            </div>
+
+            <div class="heading">
+              <h1>Welcome <span id="userName"></span></h1>
+            </div>
+
+            <div class="instructions">
+              <h1>Instructions</h1>
+
+              <ol>
+                <li>First you have to choose any one topic from <span>5 topics</span>.</li>
+                <li>You will be asked <span>10 questions</span> related to topic.
+                </li>
+                <li>Each question has <span>4 option</span>. You can choose only <span>one option</span>.</li>
+                <li>You will get <span>1 point</span> for each question.</li>
+                <li>You will get <span>15 seconds</span> for each question.</li>
+                <li>The <span>result</span> will be displayed at end of the quiz.</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Sectoion 2 -->
+          <div class="section2">
+            <!-- Logout Button -->
+            <button id="logout">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <path d="M15.2405 22.27H15.1105C10.6705 22.27 8.5305 20.52 8.1605 16.6C8.1205 16.19 8.4205 15.82 8.8405 15.78C9.2405 15.74 9.6205 16.05 9.6605 16.46C9.9505 19.6 11.4305 20.77 15.1205 20.77H15.2505C19.3205 20.77 20.7605 19.33 20.7605 15.26V8.73998C20.7605 4.66998 19.3205 3.22998 15.2505 3.22998H15.1205C11.4105 3.22998 9.9305 4.41998 9.6605 7.61998C9.6105 8.02998 9.2605 8.33998 8.8405 8.29998C8.4205 8.26998 8.1205 7.89998 8.1505 7.48998C8.4905 3.50998 10.6405 1.72998 15.1105 1.72998H15.2405C20.1505 1.72998 22.2505 3.82998 22.2505 8.73998V15.26C22.2505 20.17 20.1505 22.27 15.2405 22.27Z" fill="currentColor" />
+                <path d="M14.9991 12.75H3.61914C3.20914 12.75 2.86914 12.41 2.86914 12C2.86914 11.59 3.20914 11.25 3.61914 11.25H14.9991C15.4091 11.25 15.7491 11.59 15.7491 12C15.7491 12.41 15.4091 12.75 14.9991 12.75Z" fill="currentColor" />
+                <path d="M5.84945 16.1001C5.65945 16.1001 5.46945 16.0301 5.31945 15.8801L1.96945 12.5301C1.67945 12.2401 1.67945 11.7601 1.96945 11.4701L5.31945 8.12009C5.60945 7.83009 6.08945 7.83009 6.37945 8.12009C6.66945 8.41009 6.66945 8.89009 6.37945 9.18009L3.55945 12.0001L6.37945 14.8201C6.66945 15.1101 6.66945 15.5901 6.37945 15.8801C6.23945 16.0301 6.03945 16.1001 5.84945 16.1001Z" fill="currentColor" />
+              </svg>
+              Logout
+            </button>
+
+            <!-- Topic Container -->
+            <div class="container">
+              <div class="topic_section">
+                <div class="topic_btn" id="topic_btn">
+                  <span class="btn_txt">Select Langauge</span>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+
+                <ul class="topics" id="topics">
+                  <li class="topic">
+                    <img src="./Images/Html Icon.svg" alt="Html Icon" />
+                    <input type="radio" value="Html" class="input_topic" name="topic" id="topic1" />
+                    <label for="topic1">Html</label>
+                  </li>
+                  <li class="topic">
+                    <img src="./Images/Css Icon.svg" alt="Css Icon" />
+                    <input type="radio" value="Css" class="input_topic" name="topic" id="topic2" />
+                    <label for="topic2">Css</label>
+                  </li>
+                  <li class="topic">
+                    <img src="./Images/Js Icon.svg" alt="Js Icon" />
+                    <input type="radio" value="JavaScript" class="input_topic" name="topic" id="topic3" />
+                    <label for="topic3">JavaScript</label>
+                  </li>
+                  <li class="topic">
+                    <img src="./Images/Python Icon.svg" alt="Python Icon" />
+                    <input type="radio" value="Python" class="input_topic" name="topic" id="topic4" />
+                    <label for="topic4">Python</label>
+                  </li>
+                  <li class="topic">
+                    <img src="./Images/Java Icon.svg" alt="Java Icon" />
+                    <input type="radio" value="Java" class="input_topic" name="topic" id="topic5" />
+                    <label for="topic5">Java</label>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Start Quiz Button -->
+              <button id="start_quiz">Start Quiz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Quiz JavaScript File -->
+    <script src="./Js/instruction.js"></script>
+
+    <!-- SweetAlert 2 Js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

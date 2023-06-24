@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiztion - Login</title>
+
+  <!-- Css File -->
+  <link rel="stylesheet" href="./Css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./Images/apple-touch-icon.png" type="image/x-icon">
+</head>
+<body>
+
+  <main>
+    <div class="box">
+      <div class="inner_box">
+        <div class="forms_wrap">
+          <div class="login_form">
+            <div class="logo">
+              <img src="./Images/Logo.svg" alt="Quiztion Logo">
+            </div>
+
+            <div class="heading">
+              <h2>Login to your Account</h2>
+              <h6>Not registered yet? <span class="register">Register</span></h6>
+            </div>
+
+            <div class="actual_form">
+              <div class="input_wrap">
+                <input type="text" class="input_field" id="login_name" autocomplete="off" required />
+                <label>Name</label>
+              </div>
+              <div class="input_wrap">
+                <input type="password" class="input_field" id="login_password" autocomplete="off" required />
+                <label>Password</label>
+              </div>
+
+              <input type="submit" value="Login" class="login_btn" />
+
+              <p class="text">
+                Forgotten your password or your login details? <a href="#">Get help</a> signing in
+              </p>
+            </div>
+          </div>
+          <div class="register_form">
+            <div class="logo">
+              <img src="./Images/Logo.svg" alt="Quiztion Logo">
+            </div>
+
+            <div class="heading">
+              <h2>Get Started</h2>
+              <h6>Already have an account? <span class="login">Login</span></h6>
+            </div>
+
+            <div class="actual_form">
+              <div class="input_wrap">
+                <input type="text" class="input_field" id="register_name" autocomplete="off" required />
+                <label>Name</label>
+              </div>
+              <div class="input_wrap">
+                <input type="password" class="input_field" id="register_password" autocomplete="off" required />
+                <label>Create Password</label>
+              </div>
+
+              <input type="submit" value="Register" class="register_btn" />
+
+              <p class="text">
+                By signing up , I agree to the <a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right_side"></div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Main JavaScript File -->
+  <script src="./Js/app.js"></script>
+
+  <!-- SweetAlert 2 Js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
+  

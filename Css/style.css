@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --Main-Color: #0066ff;
+  --Light-Color: #8e92bc;
+  --Text-Color: #141522;
+  --White-Color: #fff;
+  --Success-Color: #008000;
+  --Error-Color: #FF0000;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: url(../Images/stacked-peaks-haikei.svg) center no-repeat;
+  background-size: cover;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  height: 640px;
+  background-color: var(--White-Color);
+  border-radius: 32px;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.box .inner_box {
+  position: absolute;
+  width: calc(100% - 65.6px);
+  height: calc(100% - 65.6px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner_box .forms_wrap {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  transition: 0.8s ease-in-out;
+}
+
+.forms_wrap .login_form {
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--White-Color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* display: none; */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: opacity 0.02s 0.4s;
+}
+.login_form .logo img {
+  width: 180px;
+}
+
+.login_form .heading h2 {
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--Main-Color);
+}
+.login_form .heading h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Text-Color);
+  margin-top: 8px;
+}
+.login_form .heading h6 span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Main-Color);
+  cursor: pointer;
+}
+
+.login_form .input_wrap {
+  position: relative;
+  height: 55px;
+  margin-bottom: 32px;
+}
+.input_wrap .input_field {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid var(--Light-Color);
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 18px;
+  color: var(--Text-Color);
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+.input_wrap label {
+  position: absolute;
+  background-color: var(--White-Color);
+  padding: 5px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--Light-Color);
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+.input_wrap .input_field.active {
+  border-color: var(--Main-Color);
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.12); */
+}
+.input_wrap .input_field.active + label {
+  font-size: 14px;
+  top: -8px;
+  color: var(--Main-Color);
+}
+
+.login_form .login_btn {
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: var(--Main-Color);
+  color: var(--White-Color);
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: 0.2s ease;
+}
+.login_form .login_btn:hover {
+  box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.12);
+}
+
+.login_form .text {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Text-Color);
+}
+.login_form .text a {
+  font-weight: 600;
+  color: var(--Main-Color);
+}
+
+.inner_box .right_side {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  top: 0;
+  left: 45%;
+  background: url(../Images/stacked-peaks-haikei.svg) center no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+/* Register Form */
+
+.forms_wrap .register_form {
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--White-Color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.02s 0.4s;
+}
+.register_form .logo img {
+  width: 180px;
+}
+
+.register_form .heading h2 {
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--Main-Color);
+}
+.register_form .heading h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Text-Color);
+  margin-top: 8px;
+}
+.register_form .heading h6 span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Main-Color);
+  cursor: pointer;
+}
+
+.register_form .input_wrap {
+  position: relative;
+  height: 55px;
+  margin-bottom: 32px;
+}
+.input_wrap .input_field {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid var(--Light-Color);
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 18px;
+  color: var(--Text-Color);
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+.input_wrap label {
+  position: absolute;
+  background-color: var(--White-Color);
+  padding: 5px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--Light-Color);
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+.input_wrap .input_field.active {
+  border-color: var(--Main-Color);
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.12); */
+}
+.input_wrap .input_field.active + label {
+  font-size: 14px;
+  top: -8px;
+  color: var(--Main-Color);
+}
+
+.register_form .register_btn {
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: var(--Main-Color);
+  color: var(--White-Color);
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: 0.2s ease;
+}
+.register_form .register_btn:hover {
+  box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.12);
+}
+
+.register_form .text {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Text-Color);
+}
+.register_form .text a {
+  font-weight: 600;
+  color: var(--Main-Color);
+}
+
+.inner_box .right_side {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  top: 0;
+  left: 45%;
+  background: url(../Images/stacked-peaks-haikei.svg) center no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  transition: 0.8s ease-in-out;
+}
+
+main.sign-up-mode .login_form {
+  opacity: 0;
+  pointer-events: none;
+}
+main.sign-up-mode .register_form {
+  opacity: 1;
+  pointer-events: all;
+}
+
+main.sign-up-mode .forms_wrap {
+  left: 55%;
+}
+main.sign-up-mode .right_side {
+  left: 0%;
+}

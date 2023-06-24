@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiztion - Css Quiz</title>
+
+  <!-- Css File -->
+  <link rel="stylesheet" href="./Css/cssQ.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./Images/apple-touch-icon.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Quiz Section -->
+  <section class="quiz_section">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <img src="./Images/Logo.svg" alt="Quiztion Logo">
+      </div>
+
+      <!-- Score & Time -->
+      <div class="score_timer">
+        <div class="score">
+          <div class="show_score">
+            <h4>Score: <span id="show_Score">0</span></h4>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <h4>Time Left: <span id="remainingTime">00</span></h4>
+          </div>
+        </div>
+        <button id="quitQuiz">Quit Quiz</button>
+      </div>
+    </div>
+
+    <!-- Quiz Part -->
+    <div class="quiz_container">
+
+      <!-- Question -->
+      <div class="question">
+        <h2 id="question">Question will be display here</h2>
+      </div>
+
+      <!-- Options -->
+      <div class="option_container">
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="answer" id="ans1" class="answer" />
+            <label for="ans1" id="option1">Answer Option</label>
+          </li>
+          <li class="option">
+            <input type="radio" name="answer" id="ans2" class="answer" />
+            <label for="ans2" id="option2">Answer Option</label>
+          </li>
+          <li class="option">
+            <input type="radio" name="answer" id="ans3" class="answer" />
+            <label for="ans3" id="option3">Answer Option</label>
+          </li>
+          <li class="option">
+            <input type="radio" name="answer" id="ans4" class="answer" />
+            <label for="ans4" id="option4">Answer Option</label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="submit_btn">
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Html Quiz JavaScript File -->
+  <script src="./Js/cssQ.js"></script>
+
+  <!-- SweetAlert 2 Js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+</body>
+</html>
